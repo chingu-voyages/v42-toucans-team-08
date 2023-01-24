@@ -1,7 +1,9 @@
 # voyage-tasks
 
-- [ ] Markup this weekend!
+- [x] Markup this weekend!
 - [ ] Refactor CSS
-- [ ] Responsive design - current is just basic to have something up and running
+- [x] Responsive design - current is just basic to have something up and running
+      // partial 375px - 600px looks good.
 - [ ] Discuss what features to add
+- [ ] Active states - awaiting details
 - [ ] ... TBD
