@@ -10,3 +10,5 @@
 ##todo
 
 - [ ] Too much! We shall discuss tomorrow/whenever possible.
+- [ ] Address what occures when the user enters an invalid search query
+- [ ] The animation / #FENSCUI
