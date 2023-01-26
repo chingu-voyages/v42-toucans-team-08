@@ -6,3 +6,5 @@ async function randomFact(){
     norisfact.innerText=fact
   }
   window.onload = randomFact();
+
+  
