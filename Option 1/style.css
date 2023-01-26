@@ -73,6 +73,17 @@ button {
  padding: 0 5rem;
 }
 
+.user-searched {
+ font-size: .95rem;
+ margin-bottom: 25px;
+}
+
+.user-searched span {
+ color: orangered;
+ text-transform: uppercase;
+ /* font-size: rem; */
+}
+
 .fact {
  display: flex;
  flex-direction: column;
