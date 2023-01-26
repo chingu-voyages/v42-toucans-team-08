@@ -1,9 +1,6 @@
-# voyage-tasks
+#updates
 
-- [x] Markup this weekend!
-- [ ] Refactor CSS
-- [x] Responsive design - current is just basic to have something up and running
-      // partial 375px - 600px looks good.
-- [ ] Discuss what features to add
-- [ ] Active states - awaiting details
-- [ ] ... TBD
+[1] Added button functionality to the random fact -- so when user clicks it
+works now [2] Added basic api call from user search query -- when user searches
+it will disply the fact based on input [3] Added Stellas suggestion about a
+"KEYWORD" displaying what the user searched!

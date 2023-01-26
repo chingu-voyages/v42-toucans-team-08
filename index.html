@@ -6,17 +6,20 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <link rel="stylesheet" href="style.css">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
  <title>Chuck Norris Voyage 42 Team 8</title>
- <link rel="icon" href="image.png">
 </head>
 
 <body>
 
  <header>
-  <h1>Chuck Norris Facts!</h1>
-  <form action="#">
-   <input type="text" name="search" id="search" placeholder="Fact search">
-   <select name="categories" id="categories">
+  <div class="container-header">
+   <h1>Chuck Norris Facts!</h1>
+   <img class="logo" src="1.svg" alt="logo">
+  </div>
+  <form action="#" class="form" id="form">
+   <input type="text" name="search" id="search" class="search" placeholder="Fact search">
+   <select name="categories" id="categories" class="categories">
     <option value=""> --- Categories --- </option>
     <option value="option1">Option #1</option>
     <option value="option2">Option #2</option>
@@ -24,7 +27,7 @@
     <option value="option4">Option #4</option>
     <option value="option5">Option #5</option>
    </select>
-   <button>Search</button>
+   <button id="search-btn" class="search-btn" type='button'>Search</button>
   </form>
  </header>
 
@@ -36,9 +39,9 @@
   </section>
 
   <section class="fact" id="fact">
-   <p id="chuckfact">Its always dark when Chuck Norris wakes up cause the sun dares not glare at Chuck Norris.
-   </p>
-   <button onclick="randomFact()">Get a random fact!</button>
+   <h2 class="user-searched"> You searched for the keyword: <span id="keyword" class="keyword"> </span> </h2>
+   <p class="fact-text" id="fact-text"></p>
+   <button class="random-fact" id="random-fact">Get a random fact!</button>
   </section>
 
  </main>
@@ -46,7 +49,8 @@
  <footer>
   <small>Chingu Voyage 42 - Toucans Team 08</small>
  </footer>
- <script src="javascript.js"></script>
+
+ <script src="javascript.js"> </script>
 </body>
 
 </html>
