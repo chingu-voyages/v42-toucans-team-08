@@ -1,14 +1,14 @@
-# voyage-tasks
+##updates
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+- [1] Added button functionality to the random fact -- so when user clicks it
+  works now
+- [2] Added basic api call from user search query -- when user searches it will
+  disply the fact based on input
+- [3] Added Stellas suggestion about a "KEYWORD" displaying what the user
+  searched!
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+##todo
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
-
-> Own it & Make it your Own!
+- [ ] Too much! We shall discuss tomorrow/whenever possible.
+- [ ] Address what occures when the user enters an invalid search query
+- [ ] The animation / #FENSCUI
