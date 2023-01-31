@@ -21,21 +21,37 @@ form {
  width: 100%;
  max-width: 700px;
  justify-content: space-around;
- border-left: 7px solid #222;
+ /* border-left: 7px solid #222; */
 }
 
 input[type=text] {
- border: 1px solid gray;
+ /* border: 1px solid gray; */
  height: 40px;
- width: 270px;
- padding: 0 2rem;
- border-radius: 5px;
+ width: 230px;
+ padding: 0 .5rem;
  border: none;
  outline: none;
  background-color: transparent;
- box-shadow: 0 0 1px 1px grey;
+ /* box-shadow: 0 0 1px 1px grey; */
 }
 
+input[type=text]:focus,
+input[type=text]:active {
+ background-color: transparent;
+}
+
+
+
+.search-bar-container {
+ display: flex;
+ align-items: center;
+ box-shadow: 0 0 1px 1px grey;
+ border-radius: 5px;
+}
+
+.search-bar-container img {
+ margin-left: 15px;
+}
 
 select {
  border-radius: 5px;
@@ -118,7 +134,7 @@ footer {
  /*Tablets [601px -> 1200px]*/
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 
  /* smartphones [-> 600px]*/
 
@@ -129,10 +145,20 @@ footer {
   text-align: center;
  }
 
+ footer {
+  background-color: white;
+  color: grey;
+ }
+
 }
 
 @media only screen and (max-width: 600px) {
  /*smartphones [325px -> 600px]*/
+
+
+ body {
+  overflow-x: hidden;
+ }
 
  header {
   display: flex;
@@ -209,6 +235,7 @@ footer {
   height: 200px;
   width: 200px;
  }
+
 
  /* .fact {
   padding-top: 15rem !important;

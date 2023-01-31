@@ -1,14 +1,10 @@
-##updates
+###UPDATES
 
-- [1] Added button functionality to the random fact -- so when user clicks it
-  works now
-- [2] Added basic api call from user search query -- when user searches it will
-  disply the fact based on input
-- [3] Added Stellas suggestion about a "KEYWORD" displaying what the user
-  searched!
-  
-##todo
-
-- [ ] Too much! We shall discuss tomorrow/whenever possible.
-- [ ] Address what occures when the user enters an invalid search query
-- [ ] The animation / #FENSCUI
+- [x] I have fixed the overflow that used to occur when the joke was too long,
+      that is not the case anymore.
+- [x] I had added all the categories we need to be able to search for using the
+      `category api`
+- [x] I modified a few colours.
+- [x] I also temporarily removed our hero section for testing purposes/and until
+      we have a better plan for it. Its still in the HTML though.
+- [x] I have added EXO as the default font.
