@@ -135,14 +135,9 @@ footer {
 
 /* media queries */
 
-
-@media only screen and (max-width: 1200px) {
-  /*Tablets [601px -> 1200px]*/
-}
-
 @media only screen and (max-width: 1200px) {
 
-  /* smartphones [-> 600px]*/
+  /* smartphones [-> 600px -- 1200px screen]*/
 
   header {
     display: flex;
@@ -150,7 +145,6 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: .75rem;
-    /* padding-bottom: 1rem; */
   }
 
   form {
@@ -163,7 +157,6 @@ footer {
   .search-bar-container,
   .categories,
   .search-btn {
-    border: 2px solid red;
     margin: 15px 0;
     height: 50px;
   }

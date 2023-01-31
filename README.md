@@ -8,3 +8,10 @@
 - [x] I also temporarily removed our hero section for testing purposes/and until
       we have a better plan for it. Its still in the HTML though.
 - [x] I have added EXO as the default font.
+- [x] Its responsive in that upto 1200px screen the layout does not "break" and
+      look jumbled etc. / and looks good at 375px small screen too. However, I
+      changed the way the bar looks -- so, will need to fix that to maintain the
+      RD.
+- [x] Removed the H1 that said "Chuck Norris Facts" - because of our logo I felt
+      we no longer needed that. Please advise however. :)
+- [x] ...list will be decided tonight (31st Jan 2023)
