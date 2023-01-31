@@ -20,7 +20,6 @@ form {
  display: flex;
  width: 100%;
  max-width: 700px;
- /* border: 1px solid green; */
  justify-content: space-around;
  border-left: 7px solid #222;
 }
@@ -91,6 +90,7 @@ button {
  align-items: center;
  justify-content: space-around;
  padding-bottom: 3em;
+ background-color: grey;
 }
 
 .fact p {
@@ -226,7 +226,14 @@ footer {
   display: flex;
   /* height: 100%; */
   margin-top: 3rem;
-  padding: 3.5rem .5rem 0 .5rem;
+  height: fit-content;
+  /* Added fit content so we dont need to 
+padding-manage/manipulate, wwhich is just weird, right?
+*/
+
+  padding: 2rem;
+
+  /* padding: 10.5rem .5rem 0 .5rem; */
   align-items: center;
   justify-content: space-around;
  }

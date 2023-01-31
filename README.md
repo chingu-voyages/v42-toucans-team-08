@@ -6,7 +6,7 @@
   disply the fact based on input
 - [3] Added Stellas suggestion about a "KEYWORD" displaying what the user
   searched!
-
+  
 ##todo
 
 - [ ] Too much! We shall discuss tomorrow/whenever possible.
