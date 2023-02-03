@@ -1,16 +1,13 @@
-# CategoryAPI
+# Kirsten Updates / 3.Feb 2023
 
-- [x] I have added a ternary to check if the value of the search bar is true and
-      if so, then the function to search the api via a query string runs if not
-      it doesnt, it was causing a console log error without this.
-- [x] Functional category API call when button is clicked -- also has a ternary
-      due to it sharing the same button.
+## Changes made
 
-#This branchs tasks
-
-- [ ] Conditionally change the "searched for the keyword" with "search this
-      `category-name`" instead.
-
-- [ ] ...tbd with team.
-
-- [ ] Stella ----- EMOJI! XD :) to make it looks pretty.
+- [x] I have streamlined our DARKMODE CSS! I was not happy with it, so I learned
+      some SCSS basics and its better now. It also reduced the amount of
+      `getElementByID`s in our JavaScript File :)
+- [x] I updated the logo to a different one :( I know we had never really voted,
+      like we had planned to, but, still feel bad about the change, but, this
+      one was easier to remove the BG on and since I didn't really find a
+      solution since yesterday... I went with it. If ya'll know a better way, go
+      right on ahead and change please. That would be awesome. :)
+- [x] I have updated the FILE STRUCTURE.
