@@ -11,3 +11,8 @@
       solution since yesterday... I went with it. If ya'll know a better way, go
       right on ahead and change please. That would be awesome. :)
 - [x] I have updated the FILE STRUCTURE.
+
+## Additional extras
+
+_I added some pseudo-class effects to the Darkmode buttons. Colour for them is
+also from Stellas design._
