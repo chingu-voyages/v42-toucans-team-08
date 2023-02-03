@@ -1,4 +1,4 @@
-#Darkmode branch
+# Darkmode branch
 
 - [x] Added a darkmode scheme! Its to be worked, on, using other methods but
       this is what I have, please provide feedback and required changes. :)
