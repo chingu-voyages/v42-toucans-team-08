@@ -10,6 +10,35 @@
   font-family: 'EXO', sans-serif;
 }
 
+label {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.darkmode-toggle {
+  position: fixed;
+  /* top: 0; */
+  right: 0px;
+  /* border: 2px solid red; */
+}
+
+.fa-sun {
+  font-size: 1.5rem;
+  display: none;
+}
+
+.fa-moon {
+  font-size: 1.5rem;
+}
+
 
 header {
   display: flex;
@@ -27,7 +56,6 @@ form {
   width: 100%;
   max-width: 700px;
   justify-content: space-around;
-  /* border-left: 7px solid #222; */
 }
 
 input[type=text] {
@@ -53,6 +81,7 @@ input[type=text]:active {
   align-items: center;
   box-shadow: 0 0 1px 1px grey;
   border-radius: 5px;
+  background-color: white;
 }
 
 .search-bar-container img {
@@ -63,10 +92,15 @@ select {
   border-radius: 5px;
   border: none;
   outline: none;
-  background-color: transparent;
+  background-color: white;
+  /* color: #8080; */
   width: 270px;
   box-shadow: 0 0 1px 1px grey;
   padding: 0 2rem;
+}
+
+option {
+  font-size: 1.5rem;
 }
 
 button {
@@ -116,7 +150,7 @@ button {
 }
 
 .fact p {
-  /* font-size: 2.5rem; */
+  font-size: 1.5rem;
   padding: 0 5em;
   text-align: center;
 }
@@ -127,9 +161,9 @@ button {
 }
 
 footer {
-  background-color: grey;
-  padding: 2em 3em;
-  color: white;
+  background-color: white;
+  padding: 2em;
+  color: grey;
   text-align: center;
 }
 
@@ -177,6 +211,7 @@ footer {
   footer {
     background-color: white;
     color: grey;
+    text-align: center;
   }
 
 }
@@ -309,4 +344,30 @@ padding-manage/manipulate, wwhich is just weird, right?
     margin-top: 4rem;
   }
 
+}
+
+/* DARK MODE COLOURS */
+
+.dark-mode-body {
+  background-color: black;
+  color: white;
+}
+
+
+.dark-mode-mid {
+  background-color: #808080;
+  color: white;
+}
+
+.dark-mode-buttons {
+  background-color: #6b6b6b;
+  color: white;
+}
+
+.dark-inputs {
+  background-color: transparent;
+}
+
+.dark-dropdown {
+  background-color: #6b6b6b;
 }

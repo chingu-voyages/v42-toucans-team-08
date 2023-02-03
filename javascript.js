@@ -49,3 +49,27 @@ async function searchJoke() {
 
 // Notes: Not perfect! Please feedback! I think Abdul or Fen can still work on the Categories.
 
+// darkmode will move to own file testing currently
+
+const darkToggle = document.querySelector("#toggle");
+const body = document.getElementsByTagName("body")[0];
+const mid = document.getElementById("fact");
+const footer = document.getElementsByTagName("footer")[0];
+const buttons = document.getElementsByTagName("button")[1];
+
+// light & dark
+
+const moon = document.getElementsByClassName("fa-moon")[0];
+const sun = document.getElementsByClassName("fa-sun")[0];
+
+darkToggle.addEventListener("change", function () {
+	body.classList.toggle("dark-mode-body");
+	footer.classList.toggle("dark-mode-body");
+	mid.classList.toggle("dark-mode-mid");
+	buttons.classList.toggle("dark-mode-buttons");
+	searchBtn.classList.toggle("dark-mode-buttons");
+});
+
+// Labels have their own events TIL 
+
+
