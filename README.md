@@ -1,11 +1,6 @@
-#Darkmode branch
+#CategoryAPI
 
-- [x] Added a darkmode scheme! Its to be worked, on, using other methods but
-      this is what I have, please provide feedback and required changes. :)
-- [x] Added a clicky too!
-
-- [ ] I need to add the sun icon when its darkmode to toggle back -- will update
-      when I have
-- [ ] If we are okay with the current scheme and no changes are needed I will do
-      this in a better way I read on MDN earlier. :)
-- [ ] I also have to figure out how to make the white on logo not an issue, any ideas/feedback if you can please. :) 
+- [x] I have added a ternary to check if the value of the search bar is true and
+      if so, then the function to search the api via a query string runs if not
+      it doesnt, it was causing a console log error without this.
+- [x] Functional category API call when button is clicked -- also has a ternary due to it sharing the same button. 
