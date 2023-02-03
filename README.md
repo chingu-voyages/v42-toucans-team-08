@@ -1,4 +1,4 @@
-#CategoryAPI
+# CategoryAPI
 
 - [x] I have added a ternary to check if the value of the search bar is true and
       if so, then the function to search the api via a query string runs if not
