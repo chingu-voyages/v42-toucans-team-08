@@ -1,216 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-
-
-* {
- box-sizing: border-box;
- margin: 0;
- padding: 0;
- font-family: 'Poppins', sans-serif;
+@font-face {
+  font-family: 'EXO';
+  src: url(./exoFont.ttf);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'EXO', sans-serif;
+}
+
+
 header {
- display: flex;
- padding: 2rem;
- justify-content: space-evenly;
- align-items: center;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 190px;
 }
 
 form {
- display: flex;
- width: 100%;
- max-width: 700px;
- /* border: 1px solid green; */
- justify-content: space-around;
- border-left: 7px solid #222;
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  justify-content: space-around;
+  /* border-left: 7px solid #222; */
 }
 
 input[type=text] {
- border: 1px solid gray;
- height: 40px;
- width: 270px;
- padding: 0 2rem;
- border-radius: 5px;
- border: none;
- outline: none;
- background-color: transparent;
- box-shadow: 0 0 1px 1px grey;
+  /* border: 1px solid gray; */
+  height: 40px;
+  width: 230px;
+  padding: 0 .5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  /* box-shadow: 0 0 1px 1px grey; */
+}
+
+input[type=text]:focus,
+input[type=text]:active {
+  background-color: transparent;
 }
 
 
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 1px 1px grey;
+  border-radius: 5px;
+}
+
+.search-bar-container img {
+  margin-left: 15px;
+}
+
 select {
- border-radius: 5px;
- border: none;
- outline: none;
- background-color: transparent;
- width: 270px;
- box-shadow: 0 0 1px 1px grey;
- padding: 0 2rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 270px;
+  box-shadow: 0 0 1px 1px grey;
+  padding: 0 2rem;
 }
 
 button {
- width: 120px;
- border-radius: 5px;
- outline: transparent;
- border: none;
- font-size: 18px;
+  width: 120px;
+  border-radius: 5px;
+  outline: transparent;
+  border: none;
+  font-size: 18px;
 }
 
 .modal {
- display: flex;
- background-color: #D9D9D9;
- height: 300px;
- align-items: center;
- padding: 0 3rem;
- /* width: 500px; */
-}
-
-.modal img {
- height: 250px;
-}
-
-.modal p {
- padding: 0 5rem;
-}
-
-.user-searched {
- font-size: .95rem;
- margin-bottom: 25px;
-}
-
-.user-searched span {
- color: orangered;
- text-transform: uppercase;
- /* font-size: rem; */
-}
-
-.fact {
- display: flex;
- flex-direction: column;
- height: 300px;
- align-items: center;
- justify-content: space-around;
- padding-bottom: 3em;
-}
-
-.fact p {
- /* font-size: 2.5rem; */
- padding: 0 5em;
- text-align: center;
-}
-
-.fact button {
- height: 50px;
- width: 200px;
-}
-
-footer {
- background-color: grey;
- padding: 2em 3em;
- color: white;
- text-align: center;
-}
-
-/* media queries */
-
-
-@media only screen and (max-width: 1200px) {
- /*Tablets [601px -> 1200px]*/
-}
-
-@media only screen and (max-width: 600px) {
-
- /* smartphones [-> 600px]*/
-
- .fact p {
-  font-size: 1.5rem;
-  font-weight: 300;
-  padding: 0 1rem;
-  text-align: center;
- }
-
-}
-
-@media only screen and (max-width: 600px) {
- /*smartphones [325px -> 600px]*/
-
- header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: .75rem;
-  /* padding-bottom: 1rem; */
- }
-
- form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1.5rem;
- }
-
- form>input,
- form>select {
-  margin: .5rem;
- }
-
-
- select {
-  height: 40px;
- }
-
-
- .search-btn {
-  height: 40px;
-  margin-top: 1.5rem;
- }
-
- .modal {
   display: flex;
   background-color: #D9D9D9;
   height: 300px;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 3rem;
+  /* width: 500px; */
+}
+
+.modal img {
+  height: 250px;
+}
+
+.modal p {
+  padding: 0 5rem;
+}
+
+.user-searched {
+  font-size: .95rem;
+  margin-bottom: 25px;
+}
+
+.user-searched span {
+  color: orangered;
+  text-transform: uppercase;
+  /* font-size: rem; */
+}
+
+.fact {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 3em;
+  background-color: grey;
+}
+
+.fact p {
+  /* font-size: 2.5rem; */
+  padding: 0 5em;
   text-align: center;
- }
+}
 
- .modal img {
-  display: none;
- }
-
- .modal p {
-  padding: 0 .5rem;
- }
-
-
-
- /* more to the top please go in order of the flow */
-
- main {
-  display: flex;
-  flex-direction: column;
- }
-
-
-
- h1 {
-  display: none;
- }
-
- .container-header {
-  display: flex;
-  flex-direction: column;
- }
-
-
- .container-header img {
-  height: 200px;
+.fact button {
+  height: 50px;
   width: 200px;
- }
+}
 
- /* .fact {
+footer {
+  background-color: grey;
+  padding: 2em 3em;
+  color: white;
+  text-align: center;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1200px) {
+
+  /* smartphones [-> 600px -- 1200px screen]*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-bar-container,
+  .categories,
+  .search-btn {
+    margin: 15px 0;
+    height: 50px;
+  }
+
+  .categories:active,
+  .categories:hover {
+    cursor: pointer;
+  }
+
+
+  .fact p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  footer {
+    background-color: white;
+    color: grey;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  /*smartphones [325px -> 600px]*/
+
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+    /* padding-bottom: 1rem; */
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+
+  form>input,
+  form>select {
+    margin: .5rem;
+  }
+
+
+  select {
+    height: 40px;
+  }
+
+
+  .search-btn {
+    height: 40px;
+    margin-top: 1.5rem;
+  }
+
+  .modal {
+    display: flex;
+    background-color: #D9D9D9;
+    height: 300px;
+    align-items: center;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .modal img {
+    display: none;
+  }
+
+  .modal p {
+    padding: 0 .5rem;
+  }
+
+
+
+  /* more to the top please go in order of the flow */
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  h1 {
+    display: none;
+  }
+
+  .container-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .container-header img {
+    height: 200px;
+    width: 200px;
+  }
+
+
+  /* .fact {
   padding-top: 15rem !important;
   display: flex;
   align-items: center;
@@ -222,28 +278,35 @@ footer {
   padding: 0px 1rem !important;
  } */
 
- .fact {
-  display: flex;
-  /* height: 100%; */
-  margin-top: 3rem;
-  padding: 3.5rem .5rem 0 .5rem;
-  align-items: center;
-  justify-content: space-around;
- }
+  .fact {
+    display: flex;
+    /* height: 100%; */
+    margin-top: 3rem;
+    height: fit-content;
+    /* Added fit content so we dont need to 
+padding-manage/manipulate, wwhich is just weird, right?
+*/
+
+    padding: 2rem;
+
+    /* padding: 10.5rem .5rem 0 .5rem; */
+    align-items: center;
+    justify-content: space-around;
+  }
 
 
- .fact p {
-  /* font-size: 2.5rem; */
-  padding: 0 1rem;
-  text-align: center;
- }
+  .fact p {
+    /* font-size: 2.5rem; */
+    padding: 0 1rem;
+    text-align: center;
+  }
 
- .random-fact {
-  margin: 2rem;
- }
+  .random-fact {
+    margin: 2rem;
+  }
 
- footer {
-  margin-top: 4rem;
- }
+  footer {
+    margin-top: 4rem;
+  }
 
 }
