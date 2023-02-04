@@ -1,0 +1,76 @@
+// DARKMODE STYLING
+
+$darkcolor: #0b0505;
+$darkmodeFontColor: #fff;
+$accentColors: #6b6b6b;
+$buttonColor: #ff981f;
+$secondayColors: #292424c8;
+$inputTextSize: 2rem;
+
+.darkmode {
+	background-color: $darkcolor;
+	color: $darkmodeFontColor;
+
+	.dark-mode-body {
+		background-color: $darkcolor;
+		// color: white;
+	}
+
+	.fact {
+		background-color: #808080;
+		// color: white;
+	}
+
+	button {
+		background-color: $buttonColor;
+		color: $darkcolor;
+		font-weight: 600;
+		letter-spacing: 1.1px;
+		// color: white;
+	}
+
+	button:active {
+		box-shadow: 0px 0px 5px 2px $darkmodeFontColor;
+		transform: scale(1.2);
+	}
+
+	button:focus,
+	button:hover {
+		cursor: pointer;
+		transform: scale(0.95);
+	}
+
+	.dark-inputs {
+		background-color: transparent;
+	}
+
+	.dark-dropdown {
+		background-color: $accentColors;
+	}
+
+	.search-bar-container {
+		// background-color: $accentColors;
+		background-color: $secondayColors;
+		color: black;
+		font-size: $inputTextSize;
+	}
+
+	::placeholder {
+		color: $darkmodeFontColor;
+	}
+
+	footer {
+		background-color: $darkcolor;
+	}
+
+	select {
+		background-color: $secondayColors;
+		color: $darkmodeFontColor;
+	}
+
+	option,
+	#placeholder-select {
+		background-color: $accentColors;
+		color: $darkmodeFontColor;
+	}
+}

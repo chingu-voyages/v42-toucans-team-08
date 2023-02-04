@@ -4,7 +4,8 @@
 <head>
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="/src/css/darkmode.css">
+ <link rel="stylesheet" href="/src/css/style.css">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!-- font awesome cdn for the toggle for darkmode and possible whatever else i think might look nice, please update wih feedback on what you want gone or the like. - kirsten -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -29,16 +30,16 @@
 
  <header>
   <div class="container-header">
-   <img class="logo" src="1.svg" alt="logo">
+   <img class="logo" src="/src/images/7.png" alt="logo">
    <!-- <h1>Chuck Norris Facts!</h1> -->
   </div>
   <form action="#" class="form" id="form">
    <div class="search-bar-container">
-    <img src="svg.png" alt="search icon image">
+    <img src="/src/images/assets/magnifying-glass-solid.svg" alt="search icon image" class="search-icon">
     <input type="text" name="search" id="search" class="search" placeholder="Fact search">
    </div>
    <select name="categories" id="categories" class="categories">
-    <option value=""> --- Categories --- </option>
+    <option id="placeholder-select" value="" selected disabled hidden> Search Categories</option>
     <option value="animal">Animal</option>
     <option value="career">Career</option>
     <option value="celebrity">Celebrity</option>
@@ -76,7 +77,7 @@
   <small>Chingu Voyage 42 - Toucans Team 08</small>
  </footer>
 
- <script src="javascript.js"> </script>
+ <script src="/src/js/javascript.js" type="module"> </script>
 </body>
 
 </html>
