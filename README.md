@@ -1,4 +1,3 @@
-
 # Current Task Checklist - 6th Feb. 2023
 
 #### Requirements
@@ -14,23 +13,19 @@ _Structure_
 
 _Styling:_
 
-- [x] Surprise us!!!
 - [x] Add a footer containing a link to your teams GitHub repo
-- [ ] In general, you will find these
-      [UI design principles](https://www.justinmind.com/ui-design/principles)
-      helpful.
 
 _Functionality_
 
-- [ ] Your app should present the user with options for displaying a random
+- [x] Your app should present the user with options for displaying a random
       fact, one based on a category selected by the user, or one based on a text
       string entered by the user. You have the option of optionally including
       this in your app since some results from the API may be offensive to some
       users.
-- [ ] For category selection, users should be able to click on a 'Categories'
+- [x] For category selection, users should be able to click on a 'Categories'
       element to reveal a list of categories they may choose from.
 - [ ] For searching by a text string allow input in upper or lower case
-- [ ] For all of the above you **_must exclude_** any quotes in the "explicit"
+- [x] For all of the above you **_must exclude_** any quotes in the "explicit"
       category and optionally, those from the "religious" and "political"
       category (see
       [Chingu Community Standards](https://discord.com/channels/330284646283608064/914163956405395476/914165230119034900)).
@@ -58,7 +53,7 @@ _Other:_
       so its UI/UX will be usable and attractive on a wide range of devices.
 - [ ] Follow [A11Y principles and practices](https://www.a11yproject.com/) so
       your app will be accessible to users with impairments.
-- [ ] Allow the user to switch between light and dark modes.
+- [x] Allow the user to switch between light and dark modes.
 - [ ] Add animation and visual effects to capture user interest in the page.
 - [ ] Add a team page to highlight members of your team. Be sure to include
       links to their professional and social media.
