@@ -28,15 +28,15 @@ document.getElementById("random-fact").addEventListener("click", randomFact);
 
 // Getting the value from the Search button and saving it to the above global variable so that the below fetch can use it to get the users JOKE!
 
-searchBtn.addEventListener("click", (e) => {
-	e.preventDefault();
-	const searchValue = searchBar.value;
-	searchQuery = searchValue;
-	searchQuery ? searchJoke() : "";
+// searchBtn.addEventListener("click", (e) => {
+// 	e.preventDefault();
+// 	const searchValue = searchBar.value;
+// 	searchQuery = searchValue;
+// 	searchQuery ? searchJoke() : "";
 
-	// Keyword searched displaying to user on page - Stella suggestion -- should add a conditional for if there is nothing being searched it does not show, will see about that tomorow. right now a bit tired! its 1am - Kirsten! Feedback though, please and make any changes you feel are better.
-	document.getElementById("keyword").innerText = searchQuery;
-});
+// 	// Keyword searched displaying to user on page - Stella suggestion -- should add a conditional for if there is nothing being searched it does not show, will see about that tomorow. right now a bit tired! its 1am - Kirsten! Feedback though, please and make any changes you feel are better.
+// 	document.getElementById("keyword").innerText = searchQuery;
+// });
 
 //The API call function for the JOKE! That was searched for with a keyword from the USER! using the Search Bar!
 
@@ -79,3 +79,10 @@ const darkModeToggle = document.querySelector("#toggle");
 darkModeToggle.addEventListener("change", toggle);
 
 // Labels have their own events TIL
+
+searchBar.addEventListener("keypress", () => {
+	searchQuery = searchBar.value;
+	searchJoke();
+
+	document.getElementById("keyword").innerText = searchQuery;
+});
