@@ -45,7 +45,11 @@ async function searchJoke() {
 searchBtn.addEventListener("click", () => {
 	category = categoryDropdown.value;
 	console.log(category);
-	category ? categorySearch() : "";
+	category
+		? categorySearch()
+		: category
+		? (document.getElementById("keyword").innerText = category)
+		: "";
 });
 
 async function categorySearch() {
@@ -66,7 +70,7 @@ darkModeToggle.addEventListener("change", toggle);
 
 // Labels have their own events TIL
 
-searchBar.addEventListener("keypress", () => {
+searchBar.addEventListener("input", () => {
 	searchQuery = searchBar.value;
 	searchJoke();
 
