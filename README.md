@@ -7,4 +7,6 @@
       easier/and also more concise and proper way to do this, I just do not know
       it, and I will look into it if time permits. Right now, it works. Please,
       as always, know a better way, `just do it`
-- [ ]
+- [x] fixed the overflow on the joke box ... it can now go on for days.. that is
+      likel bad though.
+- [x] the searched for now shows categories, needs work though x
