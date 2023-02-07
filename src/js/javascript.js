@@ -26,18 +26,25 @@ window.onload = randomFact();
 
 document.getElementById("random-fact").addEventListener("click", randomFact);
 
+//Search bar - string API function
+
 async function searchJoke() {
 	const res = await fetch(
 		`https://api.chucknorris.io/jokes/search?query=${searchQuery}`
 	);
 	const data = await res.json();
-	const factMap = data.result.map((fact) => {
-		return fact.value;
-	});
 
-	// random number to get an index from the array of facts and display it to the user!
-	const index = Math.floor(Math.random() * factMap.length);
-	norisfact.innerText = factMap[index];
+	const dataLength = (data.result || []).length;
+
+	if (dataLength) {
+		const factMap = data.result.map((fact) => {
+			return fact.value;
+		});
+		const index = Math.floor(Math.random() * factMap.length);
+		norisfact.innerText = factMap[index];
+	} else {
+		norisfact.innerText = "Please enter a valid search term!";
+	}
 }
 
 // Category API Search
@@ -45,11 +52,7 @@ async function searchJoke() {
 searchBtn.addEventListener("click", () => {
 	category = categoryDropdown.value;
 	console.log(category);
-	category
-		? categorySearch()
-		: category
-		? (document.getElementById("keyword").innerText = category)
-		: "";
+	category ? categorySearch() : "";
 });
 
 async function categorySearch() {
@@ -72,6 +75,7 @@ darkModeToggle.addEventListener("change", toggle);
 
 searchBar.addEventListener("input", () => {
 	searchQuery = searchBar.value;
+	console.log(searchQuery);
 	searchJoke();
 
 	document.getElementById("keyword").innerText = searchQuery;
