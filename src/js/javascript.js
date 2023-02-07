@@ -53,7 +53,7 @@ searchBtn.addEventListener("click", () => {
 	category = categoryDropdown.value;
 	console.log(category);
 	category ? categorySearch() : "";
-	document.getElementById("keyword").innerText = category;
+	document.getElementById("keyword").innerHTML = category;
 });
 
 async function categorySearch() {
