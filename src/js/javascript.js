@@ -53,6 +53,7 @@ searchBtn.addEventListener("click", () => {
 	category = categoryDropdown.value;
 	console.log(category);
 	category ? categorySearch() : "";
+	document.getElementById("keyword").innerText = category;
 });
 
 async function categorySearch() {
@@ -60,19 +61,11 @@ async function categorySearch() {
 		`https://api.chucknorris.io/jokes/random?category=${category}`
 	);
 	const data = await res.json();
+
 	return (norisfact.innerHTML = data.value);
 }
 
-// Notes: Not perfect! Please feedback! I think Abdul or Fen can still work on the Categories.
-
-// darkmode will move to own file testing currently
-
-const darkModeToggle = document.querySelector("#toggle");
-
-darkModeToggle.addEventListener("change", toggle);
-
-// Labels have their own events TIL
-
+// Search Input Event Listener
 searchBar.addEventListener("input", () => {
 	searchQuery = searchBar.value;
 	console.log(searchQuery);
@@ -80,3 +73,7 @@ searchBar.addEventListener("input", () => {
 
 	document.getElementById("keyword").innerText = searchQuery;
 });
+
+// Darkmode Toggle
+const darkModeToggle = document.querySelector("#toggle");
+darkModeToggle.addEventListener("change", toggle);
