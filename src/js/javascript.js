@@ -12,6 +12,8 @@ const categoryDropdown = document.querySelector("#categories"); //
 let searchQuery = searchBar.value;
 // Chosen category for API
 let category;
+//Form
+const form = document.getElementById("form");
 
 async function randomFact() {
 	const response = await fetch("https://api.chucknorris.io/jokes/random");
@@ -73,6 +75,10 @@ searchBar.addEventListener("input", (e) => {
 	searchJoke();
 
 	document.getElementById("keyword").innerText = searchQuery;
+});
+
+form.addEventListener("submit", (e) => {
+	e.preventDefault();
 });
 
 // Darkmode Toggle
