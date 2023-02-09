@@ -49,7 +49,8 @@ async function searchJoke() {
 }
 
 // Category API Search
-searchBtn.addEventListener("click", () => {
+searchBtn.addEventListener("click", (e) => {
+	e.preventDefault();
 	category = categoryDropdown.value;
 	console.log(category);
 	category ? categorySearch() : "";
@@ -66,7 +67,8 @@ async function categorySearch() {
 }
 
 // Search Input Event Listener
-searchBar.addEventListener("input", () => {
+searchBar.addEventListener("input", (e) => {
+	e.preventDefault();
 	searchQuery = searchBar.value;
 	searchJoke();
 
