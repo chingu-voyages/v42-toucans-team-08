@@ -137,13 +137,11 @@ button {
   font-size: 1.5rem;
   padding: 0 5em;
   text-align: center;
-  /* border: 2px slateblue solid; */
 }
 
 .fact-text {
   height: 100%;
   overflow-y: hidden;
-  /* padding: 20px 0; */
 }
 
 .fact button {
@@ -159,7 +157,7 @@ footer {
   text-align: center;
 }
 
-/* media queries */
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 1200px) {
 
@@ -289,10 +287,6 @@ footer {
     height: 100%;
     margin-top: 3rem;
     height: fit-content;
-    /* Added fit content so we dont need to 
-padding-manage/manipulate, wwhich is just weird, right?
-*/
-
     padding: 2rem;
     align-items: center;
     justify-content: space-around;
