@@ -20,6 +20,7 @@ async function randomFact() {
 	const data = await response.json();
 	const fact = data.value;
 	norisfact.innerText = fact;
+	document.getElementById("keyword").innerHTML = `a random fact!`;
 }
 
 window.onload = randomFact();
