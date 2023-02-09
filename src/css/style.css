@@ -150,6 +150,11 @@ button {
   margin-top: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: #1A96F0;
+}
+
 footer {
   background-color: white;
   padding: 2em;
