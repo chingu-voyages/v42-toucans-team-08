@@ -12,10 +12,6 @@ const categoryDropdown = document.querySelector("#categories"); //
 let searchQuery = searchBar.value;
 // Chosen category for API
 let category;
-// Joke count selector
-const jokeCountSelector = document.getElementById("joke-num");
-//The value for chosen amount of Joke
-let jokeCount;
 
 async function randomFact() {
 	const response = await fetch("https://api.chucknorris.io/jokes/random");
@@ -42,6 +38,7 @@ async function searchJoke() {
 
 	if (dataLength) {
 		const factMap = data.result.map((fact) => {
+			// console.log(fact);
 			return fact.value;
 		});
 		const index = Math.floor(Math.random() * factMap.length);
@@ -52,11 +49,9 @@ async function searchJoke() {
 }
 
 // Category API Search
-
 searchBtn.addEventListener("click", () => {
 	category = categoryDropdown.value;
 	console.log(category);
-	console.log(jokeCountSelector.value);
 	category ? categorySearch() : "";
 	document.getElementById("keyword").innerHTML = category;
 });
@@ -73,7 +68,6 @@ async function categorySearch() {
 // Search Input Event Listener
 searchBar.addEventListener("input", () => {
 	searchQuery = searchBar.value;
-	console.log(searchQuery);
 	searchJoke();
 
 	document.getElementById("keyword").innerText = searchQuery;
