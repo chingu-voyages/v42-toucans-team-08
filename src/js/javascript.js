@@ -54,7 +54,13 @@ async function searchJoke() {
 		const index = Math.floor(Math.random() * factMap.length);
 		//
 
-		norisfact.innerText = factMap[index];
+		norisfact.innerHTML = `<div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>`;
+
+		setTimeout(() => {
+			return (norisfact.innerText = factMap[index]);
+		}, 4000);
+
+		// norisfact.innerText = factMap[index];
 		//
 	} else {
 		norisfact.innerText = "Please enter a valid search term!";
