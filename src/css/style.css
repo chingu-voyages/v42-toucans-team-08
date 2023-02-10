@@ -51,9 +51,10 @@ header {
 form {
   display: flex;
   width: 100%;
-  max-width: 800px;
+  max-width: 750px;
   justify-content: space-evenly;
   /* border: 2px solid red; */
+  /* margin-left: 15px; */
 }
 
 input[type=text] {
