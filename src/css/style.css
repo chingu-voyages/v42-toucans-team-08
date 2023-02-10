@@ -52,7 +52,8 @@ form {
   display: flex;
   width: 100%;
   max-width: 800px;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  /* border: 2px solid red; */
 }
 
 input[type=text] {
