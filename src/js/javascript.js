@@ -40,8 +40,7 @@ async function searchJoke() {
             // "i" is to ignore case and "g" for global
             var rgx = new RegExp("("+filterWords.join("|")+")", "gi");
             fact.value = fact.value.replace(rgx, "****");
-//end of filter - we can delete it if it is not the solution we want
-			
+	
 			return fact.value;
 		});
 		const index = Math.floor(Math.random() * factMap.length);
