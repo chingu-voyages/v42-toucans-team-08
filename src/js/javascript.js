@@ -48,7 +48,9 @@ async function searchJoke() {
 searchBtn.addEventListener("click", (e) => {
 	e.preventDefault();
 	category = categoryDropdown.value;
-	category ? categorySearch() : "";
+	category
+		? categorySearch()
+		: (norisfact.innerText = "It looks like you haven't picked a category!");
 	document.getElementById("keyword").innerHTML = category;
 });
 
