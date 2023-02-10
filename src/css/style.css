@@ -162,9 +162,10 @@ a {
 }
 
 footer {
-  display: flex;
+  /* display: flex; */
   background-color: white;
   padding: 4em;
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
