@@ -77,4 +77,12 @@ $inputTextSize: 2rem;
 		background-color: $accentColors;
 		color: $darkmodeFontColor;
 	}
+
+	.light-mode-logo {
+		display: none;
+	}
+
+	.darkmode-logo {
+		display: block;
+	}
 }

@@ -57,4 +57,10 @@
 .darkmode #placeholder-select {
   background-color: #6b6b6b;
   color: #fff;
+}
+.darkmode .light-mode-logo {
+  display: none;
+}
+.darkmode .darkmode-logo {
+  display: block;
 }/*# sourceMappingURL=darkmode.css.map */

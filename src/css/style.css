@@ -44,6 +44,10 @@ header {
   height: 190px;
 }
 
+.hidden {
+  display: none;
+}
+
 form {
   display: flex;
   width: 100%;
