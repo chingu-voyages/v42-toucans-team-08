@@ -150,7 +150,9 @@ a {
 }
 
 footer {
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
   background-color: white;
   padding: 4em;
   color: grey;
@@ -158,6 +160,13 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 1800px) {
+  .fact {
+    padding: 6em;
+  }
+}
+
 
 @media only screen and (max-width: 1200px) {
 
@@ -191,6 +200,10 @@ footer {
   }
 
 
+  .fact {
+    padding: 4em;
+  }
+
   .fact p {
     font-size: 1.5rem;
     font-weight: 300;
@@ -202,6 +215,7 @@ footer {
     background-color: white;
     color: grey;
     text-align: center;
+    /* padding: 6em; */
   }
 
 }
@@ -300,10 +314,6 @@ footer {
 
   .random-fact {
     margin: 2rem;
-  }
-
-  footer {
-    margin-top: 4rem;
   }
 
 }
