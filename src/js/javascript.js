@@ -68,7 +68,6 @@ searchBar.addEventListener("input", (e) => {
 	e.preventDefault();
 	searchQuery = searchBar.value;
 	searchJoke();
-
 	document.getElementById("keyword").innerText = searchQuery;
 });
 

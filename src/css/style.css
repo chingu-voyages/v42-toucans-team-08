@@ -107,6 +107,8 @@ button {
   outline: transparent;
   border: none;
   font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
   background-color: #1A96F0;
 }
 
