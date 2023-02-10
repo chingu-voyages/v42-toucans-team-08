@@ -46,9 +46,6 @@
 .darkmode footer {
   background-color: #0b0505;
 }
-.darkmode a {
-  color: #ff981f;
-}
 .darkmode select {
   background-color: rgba(41, 36, 36, 0.7843137255);
   color: #fff;
@@ -57,10 +54,4 @@
 .darkmode #placeholder-select {
   background-color: #6b6b6b;
   color: #fff;
-}
-.darkmode .light-mode-logo {
-  display: none;
-}
-.darkmode .darkmode-logo {
-  display: block;
 }/*# sourceMappingURL=darkmode.css.map */

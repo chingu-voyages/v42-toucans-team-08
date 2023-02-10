@@ -1,11 +1,14 @@
 import toggle from "./darkmode.js";
 
-const form = document.getElementById("form");
+// Taken it out of the function scope to be able to reuse it for the user search and not have to declare a new one! - Kirsten
 const norisfact = document.getElementById("fact-text");
+// Search bar element
 const searchBar = document.getElementById("search");
+// Search button element
 const searchBtn = document.getElementById("search-btn");
-const categoryDropdown = document.querySelector("#categories");
-// Typed value from the Search Bar
+// The dropdown menu
+const categoryDropdown = document.querySelector("#categories"); //
+// The value collect from the searchBar when user enters it using the eventListener below
 let searchQuery = searchBar.value;
 // Chosen category for API
 let category;
@@ -15,7 +18,6 @@ async function randomFact() {
 	const data = await response.json();
 	const fact = data.value;
 	norisfact.innerText = fact;
-	document.getElementById("keyword").innerHTML = `a random fact!`;
 }
 
 window.onload = randomFact();
@@ -24,32 +26,40 @@ window.onload = randomFact();
 
 document.getElementById("random-fact").addEventListener("click", randomFact);
 
-//Search bar - string API function
+// Getting the value from the Search button and saving it to the above global variable so that the below fetch can use it to get the users JOKE!
+
+searchBtn.addEventListener("click", (e) => {
+	e.preventDefault();
+	const searchValue = searchBar.value;
+	searchQuery = searchValue;
+	searchQuery ? searchJoke() : "";
+
+	// Keyword searched displaying to user on page - Stella suggestion -- should add a conditional for if there is nothing being searched it does not show, will see about that tomorow. right now a bit tired! its 1am - Kirsten! Feedback though, please and make any changes you feel are better.
+	document.getElementById("keyword").innerText = searchQuery;
+});
+
+//The API call function for the JOKE! That was searched for with a keyword from the USER! using the Search Bar!
+
 async function searchJoke() {
 	const res = await fetch(
 		`https://api.chucknorris.io/jokes/search?query=${searchQuery}`
 	);
 	const data = await res.json();
+	const factMap = data.result.map((fact) => {
+		return fact.value;
+	});
 
-	const dataLength = (data.result || []).length;
-
-	if (dataLength) {
-		const factMap = data.result.map((fact) => {
-			return fact.value;
-		});
-		const index = Math.floor(Math.random() * factMap.length);
-		norisfact.innerText = factMap[index];
-	} else {
-		norisfact.innerText = "Please enter a valid search term!";
-	}
+	// random number to get an index from the array of facts and display it to the user!
+	const index = Math.floor(Math.random() * factMap.length);
+	norisfact.innerText = factMap[index];
 }
 
 // Category API Search
-searchBtn.addEventListener("click", (e) => {
-	e.preventDefault();
+
+searchBtn.addEventListener("click", () => {
 	category = categoryDropdown.value;
+	console.log(category);
 	category ? categorySearch() : "";
-	document.getElementById("keyword").innerHTML = category;
 });
 
 async function categorySearch() {
@@ -57,23 +67,15 @@ async function categorySearch() {
 		`https://api.chucknorris.io/jokes/random?category=${category}`
 	);
 	const data = await res.json();
-
 	return (norisfact.innerHTML = data.value);
 }
 
-// Search Input Event Listener
-searchBar.addEventListener("input", (e) => {
-	e.preventDefault();
-	searchQuery = searchBar.value;
-	searchJoke();
+// Notes: Not perfect! Please feedback! I think Abdul or Fen can still work on the Categories.
 
-	document.getElementById("keyword").innerText = searchQuery;
-});
+// darkmode will move to own file testing currently
 
-form.addEventListener("submit", (e) => {
-	e.preventDefault();
-});
-
-// Darkmode Toggle
 const darkModeToggle = document.querySelector("#toggle");
+
 darkModeToggle.addEventListener("change", toggle);
+
+// Labels have their own events TIL

@@ -63,10 +63,6 @@ $inputTextSize: 2rem;
 		background-color: $darkcolor;
 	}
 
-	a {
-		color: $buttonColor;
-	}
-
 	select {
 		background-color: $secondayColors;
 		color: $darkmodeFontColor;
@@ -76,13 +72,5 @@ $inputTextSize: 2rem;
 	#placeholder-select {
 		background-color: $accentColors;
 		color: $darkmodeFontColor;
-	}
-
-	.light-mode-logo {
-		display: none;
-	}
-
-	.darkmode-logo {
-		display: block;
 	}
 }
