@@ -104,12 +104,6 @@ button {
   background-color: #1A96F0;
 }
 
-
-.joke-num-selector {
-  display: block;
-  border: 10px solid brown;
-}
-
 /*  */
 
 .user-searched {
@@ -156,8 +150,9 @@ a {
 }
 
 footer {
+  height: 50px;
   background-color: white;
-  padding: 2em;
+  /* padding: 2em; */
   color: grey;
   text-align: center;
 }
