@@ -48,7 +48,6 @@ async function searchJoke() {
 searchBtn.addEventListener("click", (e) => {
 	e.preventDefault();
 	category = categoryDropdown.value;
-	console.log(category);
 	category ? categorySearch() : "";
 	document.getElementById("keyword").innerHTML = category;
 });
