@@ -104,6 +104,18 @@ button {
   background-color: #1A96F0;
 }
 
+
+button:active {
+  box-shadow: 0px 0px 5px 2px black;
+  transform: scale(1.2);
+}
+
+button:focus,
+button:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
 /*  */
 
 .user-searched {
@@ -151,12 +163,8 @@ a {
 
 footer {
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
   background-color: white;
   padding: 4em;
-  color: grey;
-  text-align: center;
 }
 
 /* MEDIA QUERIES */
@@ -215,7 +223,6 @@ footer {
     background-color: white;
     color: grey;
     text-align: center;
-    /* padding: 6em; */
   }
 
 }
