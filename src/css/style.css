@@ -123,7 +123,7 @@ button {
   /* height: 300px; */
   align-items: center;
   justify-content: space-around;
-  padding-bottom: 3em;
+  padding: 3em;
   background-color: grey;
 }
 
