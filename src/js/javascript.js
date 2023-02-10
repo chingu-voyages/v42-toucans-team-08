@@ -35,16 +35,27 @@ async function searchJoke() {
 
 	if (dataLength) {
 		const factMap = data.result.map((fact) => {
-	//Filter swear/bad words and replace them with star symbols
-	var filterWords = ["crap", "ugly", "brat", "slut", "turd", "ass", "asshole", "piss"];
-            // "i" is to ignore case and "g" for global
-            var rgx = new RegExp("("+filterWords.join("|")+")", "gi");
-            fact.value = fact.value.replace(rgx, "****");
-	
+			//Filter swear/bad words and replace them with star symbols
+			var filterWords = [
+				"crap",
+				"ugly",
+				"brat",
+				"slut",
+				"turd",
+				"ass",
+				"asshole",
+				"piss",
+			];
+			// "i" is to ignore case and "g" for global
+			var rgx = new RegExp("(" + filterWords.join("|") + ")", "gi");
+			fact.value = fact.value.replace(rgx, "****");
 			return fact.value;
 		});
 		const index = Math.floor(Math.random() * factMap.length);
+		//
+
 		norisfact.innerText = factMap[index];
+		//
 	} else {
 		norisfact.innerText = "Please enter a valid search term!";
 	}
