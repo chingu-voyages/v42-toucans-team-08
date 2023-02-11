@@ -25,7 +25,7 @@ https://chingu-voyages.github.io/v42-toucans-team-08/
 
 ## Authors
 
-- [@FENCSUI](https://github.com/FENCSUI)
+- [@FENCSUI - Stephen](https://github.com/FENCSUI)
 - [@Stellabam - Stella](https://github.com/Stellabam)
 - [@ofthewildfire - Kirsten](https://github.com/ofthewildfire)
 
