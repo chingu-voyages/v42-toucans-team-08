@@ -2,92 +2,88 @@
 <html lang="en">
 
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <!-- GOOGLE FONTS LINK -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600;700&display=swap" rel="stylesheet">
 
- <!-- CSS -->
- <link rel="stylesheet" href="./src/css/darkmode.css">
- <link rel="stylesheet" href="./src/css/style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/darkmode.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 
- <!-- font awesome cdn - kirsten -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn - kirsten -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
- <!-- favicon -added by FENSCUI -->
- <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- favicon -added by FENSCUI -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
- <title>Chuck Norris Voyage 42 Team 8</title>
+    <title>Chuck Norris Voyage 42 Team 8</title>
 </head>
 
 <body>
 
- <header class="darkmode-toggle">
-  <label for="darkmode" id="toggle">
-   <i class="fa-solid fa-moon"></i>
-   <input type="checkbox" name="darkmode" id="darkmode">
-  </label>
-  <!-- <label for="lightmode">
-   <i class="fa-solid fa-sun"></i>
-  </label> -->
- </header>
+    <header class="darkmode-toggle">
+        <label for="darkmode" id="toggle">
+            <i class="fa-solid fa-moon"></i>
+            <input type="checkbox" name="darkmode" id="darkmode">
+        </label>
+    </header>
 
- <header>
-  <div class="container-header">
-   <img class="logo" src="./src/images/7.png" alt="logo">
-   <!-- <h1>Chuck Norris Facts!</h1> -->
-  </div>
-  <form action="#" class="form" id="form">
-   <div class="search-bar-container">
-    <img src="./src/images/magnifying-glass-solid.svg" alt="search icon image" class="search-icon">
-    <input type="text" name="search" id="search" class="search" placeholder="Fact search">
-   </div>
-   <select name="categories" id="categories" class="categories">
-    <option id="placeholder-select" value="" selected disabled hidden> Search Categories</option>
-    <option value="animal">Animal</option>
-    <option value="career">Career</option>
-    <option value="celebrity">Celebrity</option>
-    <option value="dev">Dev</option>
-    <option value="fashion">Fashion</option>
-    <option value="food">Food</option>
-    <option value="history">History</option>
-    <option value="money">Money</option>
-    <option value="movie">Movie</option>
-    <option value="music">Music</option>
-    <option value="science">Science</option>
-    <option value="sport">Sport</option>
-    <option value="travel">Travel</option>
-   </select>
-   <button id="search-btn" class="search-btn" type='button'>Search</button>
-  </form>
- </header>
+    <header>
+        <div class="container-header">
+            <!-- <img class="logo" src="./src/images/7.png" alt="logo"> -->
+            <img class="light-mode-logo" src="./src/images/logo-no-bg.gif" alt="lightmode logo">
+            <img class="darkmode-logo hidden" src="./src/images/logo-animated-dark.gif" alt="darkmode logo">
+        </div>
+        <form action="#" class="form" id="form">
+            <div class="search-bar-container">
+                <img src="./src/images/magnifying-glass-solid.svg" alt="search icon image" class="search-icon">
+                <input type="text" name="search" id="search" class="search" placeholder="Fact search">
+            </div>
+            <select name="categories" id="categories" class="categories">
+                <option id="placeholder-select" value="" selected disabled hidden> Search Categories</option>
+                <option value="animal">&#129409; Animal</option>
+                <option value="career">&#128188;Career</option>
+                <option value="celebrity">&#x1F468;&#x200D;&#x1F3A4;Celebrity</option>
+                <option value="dev">&#x1F469;&#x200D;&#x1F4BB;Dev</option>
+                <option value="fashion">&#128087;Fashion</option>
+                <option value="food">&#127837;Food</option>
+                <option value="history">&#128220;History</option>
+                <option value="money">&#128184;Money</option>
+                <option value="movie">&#127916;Movie</option>
+                <option value="music">&#127928;Music</option>
+                <option value="science">&#128300;Science</option>
+                <option value="sport">&#127934;Sport</option>
+                <option value="travel">&#128747;Travel</option>
+            </select>
+            <button id="search-btn" class="search-btn" type='button'>Search</button>
+        </form>
+    </header>
 
 
- <main>
-  <!-- <section class="modal" id="modal">
-   <img src="https://via.placeholder.com/500x270/FFFFFF?text=Placeholder+Image+Voyage42+Team8" alt="">
-   <p>Information about the application and intructions for use / possibly a modal or maybe just a section above!</p>
-  </section> -->
+    <main>
+        <section class="fact" id="fact">
+            <h2 class="user-searched" id="user-searched"> You searched: <span id="keyword" class="keyword">
+                </span> </h2>
+            <p class="fact-text" id="fact-text">
+            </p>
+            <button class="random-fact" id="random-fact">Get a random fact!</button>
+        </section>
 
-  <section class="fact" id="fact">
-   <h2 class="user-searched"> You searched for the keyword: <span id="keyword" class="keyword"> </span> </h2>
-   <p class="fact-text" id="fact-text"></p>
-   <button class="random-fact" id="random-fact">Get a random fact!</button>
-  </section>
+    </main>
 
- </main>
+    <footer>
+        <small>Chingu Voyage 42 - <a href="https://github.com/chingu-voyages/v42-toucans-team-08" target="_blank"><i
+                    class="fa-brands fa-github "></i> Toucans Team 08</a></small>
+    </footer>
 
- <footer>
-  <small>Chingu Voyage 42 - Toucans Team 08</small>
- </footer>
-
- <script src="./src/js/javascript.js" type="module"> </script>
+    <script src="./src/js/javascript.js" type="module"> </script>
 </body>
 
 </html>
