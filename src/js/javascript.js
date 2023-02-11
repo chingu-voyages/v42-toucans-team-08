@@ -45,6 +45,9 @@ async function searchJoke() {
 				"ass",
 				"asshole",
 				"piss",
+				"whore", 
+				"fuck", 
+				"homo"
 			];
 			// "i" is to ignore case and "g" for global
 			var rgx = new RegExp("(" + filterWords.join("|") + ")", "gi");
