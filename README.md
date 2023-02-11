@@ -11,6 +11,7 @@ the https://api.chucknorris.io/ API.
 - Random fact
 - Search facts / no button click
 - Category search
+- Fact load indicator
 
 ## Live
 
@@ -20,7 +21,7 @@ https://chingu-voyages.github.io/v42-toucans-team-08/
 
 ![desktop](./desktop.png)
 
-![mobile]<img src="https://i.ibb.co/WpF2y4H/chingu-voyages-github-io-v42-toucans-team-08-i-Phone-SE.png" alt="chingu-voyages-github-io-v42-toucans-team-08-i-Phone-SE" height="400px">
+<img src="https://i.ibb.co/WpF2y4H/chingu-voyages-github-io-v42-toucans-team-08-i-Phone-SE.png" alt="chingu-voyages-github-io-v42-toucans-team-08-i-Phone-SE" height="300px">
 
 ## Authors
 
