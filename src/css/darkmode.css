@@ -48,6 +48,7 @@
 }
 .darkmode a {
   color: #ff981f;
+  text-decoration: none;
 }
 .darkmode select {
   background-color: rgba(41, 36, 36, 0.7843137255);
